@@ -1,0 +1,145 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { Terminal, ArrowDown, FileText, CheckCircle2, ShieldCheck, Zap, Activity } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "@/components/Icons";
+import Link from "next/link";
+
+export default function Hero() {
+  return (
+    <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-grid-pattern">
+      {/* Background radial glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 radial-glow pointer-events-none" />
+      <div className="absolute top-20 right-10 w-96 h-96 radial-glow-cyan pointer-events-none" />
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+        {/* Availability / Location Badge */}
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/70 text-slate-300 text-xs font-mono shadow-sm mb-6"
+        >
+          <span className="flex h-2 w-2 relative">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+          </span>
+          <span>Dublin, Ireland 🇮🇪</span>
+          <span className="text-slate-600">•</span>
+          <span className="text-emerald-400 font-medium">Available for SDET & DevOps/SRE Roles</span>
+        </motion.div>
+
+        {/* Main Headline */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="max-w-4xl"
+        >
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.15]">
+            I build test automation frameworks that{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">
+              don&apos;t flake
+            </span>{" "}
+            and cloud systems that{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-sky-300">
+              stay resilient
+            </span>.
+          </h1>
+
+          <p className="mt-6 text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
+            Hi, I&apos;m <strong className="text-white font-semibold">Jenil Patel</strong>—a Software Development Engineer in Test (SDET) & Cloud Reliability / DevOps engineer. Currently pursuing an MSc in Computing Science at Griffith College Dublin. I bridge code-first automated quality engineering with resilient cloud infrastructure.
+          </p>
+        </motion.div>
+
+        {/* Action Buttons */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="mt-8 flex flex-wrap items-center gap-3 sm:gap-4 font-mono text-xs"
+        >
+          <a
+            href="#projects"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold transition-all shadow-lg shadow-emerald-500/20"
+          >
+            <span>Explore Projects</span>
+            <ArrowDown className="w-4 h-4" />
+          </a>
+
+          <Link
+            href="/resume"
+            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700/80 transition-all"
+          >
+            <FileText className="w-4 h-4 text-emerald-400" />
+            <span>Master Resume</span>
+          </Link>
+
+          <a
+            href="https://github.com/19jenil"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 hover:border-slate-700 transition-all"
+          >
+            <GithubIcon className="w-4 h-4 text-slate-400" />
+            <span>GitHub (@19jenil)</span>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/jenil-patel-409902211"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 hover:border-slate-700 transition-all"
+          >
+            <LinkedinIcon className="w-4 h-4 text-cyan-400" />
+            <span>LinkedIn</span>
+          </a>
+        </motion.div>
+
+        {/* Real-time Telemetry Metrics Strip */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="mt-14 pt-8 border-t border-slate-800/80 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6"
+        >
+          <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-sm">
+            <div className="flex items-center justify-between text-slate-400 mb-1">
+              <span className="text-[11px] font-mono uppercase tracking-wider">Test Automation</span>
+              <Zap className="w-4 h-4 text-amber-400" />
+            </div>
+            <div className="text-2xl sm:text-3xl font-bold font-mono text-white">65%</div>
+            <p className="text-xs text-slate-400 mt-0.5">Regression time reduced across 8 releases</p>
+          </div>
+
+          <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-sm">
+            <div className="flex items-center justify-between text-slate-400 mb-1">
+              <span className="text-[11px] font-mono uppercase tracking-wider">Test Coverage</span>
+              <ShieldCheck className="w-4 h-4 text-emerald-400" />
+            </div>
+            <div className="text-2xl sm:text-3xl font-bold font-mono text-white">140+</div>
+            <p className="text-xs text-slate-400 mt-0.5">Automated test scenarios in Playwright & Selenium</p>
+          </div>
+
+          <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-sm">
+            <div className="flex items-center justify-between text-slate-400 mb-1">
+              <span className="text-[11px] font-mono uppercase tracking-wider">System Latency</span>
+              <Activity className="w-4 h-4 text-cyan-400" />
+            </div>
+            <div className="text-2xl sm:text-3xl font-bold font-mono text-white">&lt;40ms</div>
+            <p className="text-xs text-slate-400 mt-0.5">p95 auth latency sustained on AWS EKS</p>
+          </div>
+
+          <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-sm">
+            <div className="flex items-center justify-between text-slate-400 mb-1">
+              <span className="text-[11px] font-mono uppercase tracking-wider">Model Benchmark</span>
+              <CheckCircle2 className="w-4 h-4 text-violet-400" />
+            </div>
+            <div className="text-2xl sm:text-3xl font-bold font-mono text-white">98.17%</div>
+            <p className="text-xs text-slate-400 mt-0.5">ResNet50 classification on 118K images</p>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
