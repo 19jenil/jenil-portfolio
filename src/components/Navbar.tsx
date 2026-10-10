@@ -38,7 +38,7 @@ export default function Navbar() {
               <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
             </span>
             <span className="text-[10px] text-slate-400 font-mono -mt-0.5">
-              SDET & Cloud Reliability
+              Software Engineer
             </span>
           </div>
         </Link>

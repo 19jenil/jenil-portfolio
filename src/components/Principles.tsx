@@ -63,13 +63,13 @@ export default function Principles() {
           <div className="space-y-2">
             <div className="flex items-center gap-2 text-xs font-mono text-emerald-400">
               <MapPin className="w-3.5 h-3.5" />
-              <span>CURRENT CHAPTER: DUBLIN, IRELAND 🇮🇪</span>
+              <span>BASED IN DUBLIN, IRELAND 🇮🇪</span>
             </div>
             <h3 className="text-xl font-bold text-white">
               MSc in Computing Science @ Griffith College Dublin
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
-              Holding an MSc in Computing Science in Dublin, with deep expertise in networking, cloud-native architectures, and cybersecurity. Passionate about Ireland’s thriving technology ecosystem and seeking full-time SDET, QA Automation, or SRE / Cloud DevOps opportunities.
+              Holding an MSc in Computing Science from Griffith College Dublin, with strong hands-on experience across software engineering, cloud infrastructure, and AI systems. Actively seeking graduate, junior, and full-time Software Engineer (SDE), AI Engineer, Cloud/DevOps, or Quality Engineering roles in Ireland &amp; Remote.
             </p>
           </div>
 

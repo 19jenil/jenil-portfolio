@@ -26,7 +26,7 @@ export default function Hero() {
           </span>
           <span>Dublin, Ireland 🇮🇪</span>
           <span className="text-slate-600">•</span>
-          <span className="text-emerald-400 font-medium">Available for SDET & DevOps/SRE Roles</span>
+          <span className="text-emerald-400 font-medium">Available for Software Engineer (SDE, AI, Cloud) Roles</span>
         </motion.div>
 
         {/* Main Headline */}
@@ -48,7 +48,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
-            Hi, I&apos;m <strong className="text-white font-semibold">Jenil Patel</strong>—a Software Development Engineer in Test (SDET) & Cloud Reliability / DevOps engineer with an MSc in Computing Science from Griffith College Dublin. I bridge code-first automated quality engineering with resilient cloud infrastructure.
+            Hi, I&apos;m <strong className="text-white font-semibold">Jenil Patel</strong>—a versatile Software Engineer with strong hands-on experience in full-stack backend development, cloud infrastructure, AI models, and automated testing, holding an MSc in Computing Science from Griffith College Dublin.
           </p>
         </motion.div>
 

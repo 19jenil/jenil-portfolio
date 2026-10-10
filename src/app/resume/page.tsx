@@ -42,7 +42,7 @@ export default function ResumePage() {
                 JENIL PATEL
               </h1>
               <p className="text-sm sm:text-base font-semibold text-emerald-400 mt-1 print:text-gray-800">
-                Software Development Engineer in Test (SDET) & Cloud Reliability / DevOps Engineer
+                Software Engineer (SDE) | Cloud, AI &amp; Quality Engineering
               </p>
             </div>
             <div className="text-xs font-mono text-slate-400 print:text-gray-600 flex items-center gap-1.5">
@@ -96,7 +96,7 @@ export default function ResumePage() {
             PROFESSIONAL SUMMARY
           </h2>
           <p className="text-xs sm:text-sm text-slate-300 leading-relaxed print:text-gray-800">
-            Software Development Engineer in Test (SDET) with 2 years of quality engineering experience and an MSc in Computing Science in Dublin. Proven track record architecting automated test frameworks in TypeScript (Playwright with Page Object Model, fixtures, parallel cross-browser execution) and Selenium/Appium that reduced regression cycles by 65%. Expanding into Cloud Reliability and DevOps with hands-on AWS (EKS), Terraform, Kubernetes, Docker, and CI/CD pipelines with sub-40ms API p95 latency and automated recovery.
+            Software Engineer with strong hands-on engineering experience across full-stack development, cloud systems, AI architectures, and test automation, backed by an MSc in Computing Science from Griffith College Dublin. Proven track record engineering automated test frameworks in TypeScript and Python that cut regression cycles by 65%, deploying high-throughput microservices on AWS EKS with sub-40ms p95 latency, and training deep learning computer vision models with 98.2% accuracy. Adaptable, code-first problem solver targeting SDE, AI Engineer, Cloud/DevOps, and Graduate/Technical roles.
           </p>
         </section>
 

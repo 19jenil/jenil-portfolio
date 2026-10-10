@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jenil Patel | SDET & Cloud Reliability Engineer",
+  title: "Jenil Patel | Software Engineer (SDE, Cloud, AI)",
   description:
-    "Software Development Engineer in Test (SDET) & Cloud Reliability / DevOps engineer based in Dublin, Ireland. Specializing in Playwright, TypeScript, Python, AWS EKS, Terraform, and resilient CI/CD pipelines.",
+    "Software Engineer with strong hands-on experience in full-stack development, AI architectures, cloud reliability, and automated testing. Dublin, Ireland.",
   keywords: [
     "Jenil Patel",
     "SDET",

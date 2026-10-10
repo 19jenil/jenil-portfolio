@@ -30,10 +30,10 @@ export default function Footer() {
               <span>Available for Hire in Dublin & Remote</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
-              Ready to elevate your test suites and cloud reliability?
+              Ready to build high-impact software together?
             </h2>
             <p className="text-sm text-slate-400 mt-2 max-w-xl">
-              I am actively interviewing for SDET, QA Automation, and DevOps/SRE roles. Let&apos;s discuss how I can contribute to your engineering team.
+              I am actively interviewing for Software Engineer (SDE), AI Engineering, Cloud/DevOps, and SDET roles. Let&apos;s discuss how I can contribute to your team.
             </p>
           </div>
 
