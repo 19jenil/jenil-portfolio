@@ -48,7 +48,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
-            Hi, I&apos;m <strong className="text-white font-semibold">Jenil Patel</strong>—a Software Development Engineer in Test (SDET) & Cloud Reliability / DevOps engineer. Currently pursuing an MSc in Computing Science at Griffith College Dublin. I bridge code-first automated quality engineering with resilient cloud infrastructure.
+            Hi, I&apos;m <strong className="text-white font-semibold">Jenil Patel</strong>—a Software Development Engineer in Test (SDET) & Cloud Reliability / DevOps engineer with an MSc in Computing Science from Griffith College Dublin. I bridge code-first automated quality engineering with resilient cloud infrastructure.
           </p>
         </motion.div>
 

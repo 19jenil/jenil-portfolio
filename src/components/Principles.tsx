@@ -69,7 +69,7 @@ export default function Principles() {
               MSc in Computing Science @ Griffith College Dublin
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
-              Currently deepening my expertise in networking, cloud-native architectures, and cybersecurity. Passionate about Ireland’s thriving technology ecosystem and seeking full-time SDET, QA Automation, or SRE / Cloud DevOps opportunities.
+              Holding an MSc in Computing Science in Dublin, with deep expertise in networking, cloud-native architectures, and cybersecurity. Passionate about Ireland’s thriving technology ecosystem and seeking full-time SDET, QA Automation, or SRE / Cloud DevOps opportunities.
             </p>
           </div>
 
@@ -78,7 +78,7 @@ export default function Principles() {
             <div>• Cloud-Native Systems</div>
             <div>• Distributed Networks</div>
             <div>• System Observability & SRE</div>
-            <div className="text-emerald-400 pt-1 font-semibold">Graduating: 2026</div>
+            <div className="text-emerald-400 pt-1 font-semibold">Graduated: 2026</div>
           </div>
         </div>
       </div>
