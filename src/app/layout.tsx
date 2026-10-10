@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "Jenil Patel | SDET & Cloud Reliability Engineer",
     description:
       "Automated test frameworks that don't flake and cloud infrastructure that doesn't page you at 3 AM. Dublin, Ireland.",
-    url: "https://jenilpatel.vercel.app",
+    url: "https://jenil-patel.vercel.app",
     siteName: "Jenil Patel Portfolio",
     type: "website",
   },

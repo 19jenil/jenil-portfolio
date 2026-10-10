@@ -79,13 +79,13 @@ export default function ResumePage() {
             </a>
             <span>•</span>
             <a
-              href="https://jenilpatel.vercel.app"
+              href="https://jenil-patel.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-emerald-400 flex items-center gap-1 text-emerald-400 font-medium print:text-black"
             >
               <Globe className="w-3.5 h-3.5" />
-              <span>jenilpatel.vercel.app</span>
+              <span>jenil-patel.vercel.app</span>
             </a>
           </div>
         </header>
