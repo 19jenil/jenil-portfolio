@@ -78,7 +78,7 @@ export default function Principles() {
             <div>• Cloud-Native Systems</div>
             <div>• Distributed Networks</div>
             <div>• System Observability & SRE</div>
-            <div className="text-emerald-400 pt-1 font-semibold">Graduated: 2026</div>
+            <div className="text-emerald-400 pt-1 font-semibold">Sep 2025 – Sep 2026</div>
           </div>
         </div>
       </div>

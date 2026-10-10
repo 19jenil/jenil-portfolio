@@ -232,7 +232,7 @@ export default function ResumePage() {
               <div>
                 <strong className="text-white print:text-black">MSc in Computing Science</strong> — Griffith College Dublin, Ireland
               </div>
-              <span className="font-mono text-slate-400 print:text-gray-600">Graduated 2026</span>
+              <span className="font-mono text-slate-400 print:text-gray-600">Sep 2025 – Sep 2026</span>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-center justify-between">
               <div>
