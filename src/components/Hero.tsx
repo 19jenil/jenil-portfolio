@@ -26,6 +26,8 @@ export default function Hero() {
           </span>
           <span>Dublin, Ireland 🇮🇪</span>
           <span className="text-slate-600">•</span>
+          <span>Full Driving Licence</span>
+          <span className="text-slate-600">•</span>
           <span className="text-emerald-400 font-medium">Available for Software Engineer (SDE, AI, Cloud) Roles</span>
         </motion.div>
 

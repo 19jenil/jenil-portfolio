@@ -45,9 +45,13 @@ export default function ResumePage() {
                 Software Engineer (SDE) | Cloud, AI &amp; Quality Engineering
               </p>
             </div>
-            <div className="text-xs font-mono text-slate-400 print:text-gray-600 flex items-center gap-1.5">
-              <MapPin className="w-3.5 h-3.5 text-emerald-400 print:text-black" />
-              <span>Dublin, Ireland 🇮🇪</span>
+            <div className="text-xs font-mono text-slate-400 print:text-gray-600 flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-2.5">
+              <div className="flex items-center gap-1.5">
+                <MapPin className="w-3.5 h-3.5 text-emerald-400 print:text-black" />
+                <span>Dublin, Ireland 🇮🇪</span>
+              </div>
+              <span className="hidden sm:inline text-slate-600 print:text-gray-400">•</span>
+              <span className="text-emerald-400 print:text-black font-medium">Full Clean Driving Licence</span>
             </div>
           </div>
 
