@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Terminal, FileText, Mail, ExternalLink } from "lucide-react";
+import { Terminal, FileText, Mail, Activity } from "lucide-react";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -30,7 +30,7 @@ export default function Navbar() {
           className="flex items-center gap-2.5 text-slate-200 hover:text-white transition-colors group"
         >
           <div className="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 group-hover:border-emerald-500/60 transition-colors">
-            <Terminal className="w-4 h-4" />
+            <Activity className="w-4 h-4" />
           </div>
           <div className="flex flex-col">
             <span className="font-mono font-semibold text-sm tracking-tight flex items-center gap-1.5">
@@ -38,27 +38,27 @@ export default function Navbar() {
               <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
             </span>
             <span className="text-[10px] text-slate-400 font-mono -mt-0.5">
-              Software Engineer
+              Application Support &amp; Observability
             </span>
           </div>
         </Link>
 
         {/* Navigation Links */}
         <nav className="hidden md:flex items-center gap-6 text-xs font-mono text-slate-400">
-          <a href="#projects" className="hover:text-emerald-400 transition-colors">
-            // projects
-          </a>
           <a href="#console" className="hover:text-emerald-400 transition-colors">
-            // telemetry
+            // splunk &amp; incidents
+          </a>
+          <a href="#projects" className="hover:text-emerald-400 transition-colors">
+            // payment systems
           </a>
           <a href="#experience" className="hover:text-emerald-400 transition-colors">
-            // experience
+            // support experience
           </a>
           <a href="#skills" className="hover:text-emerald-400 transition-colors">
-            // skills
+            // tech stack
           </a>
           <a href="#principles" className="hover:text-emerald-400 transition-colors">
-            // philosophy
+            // ITSM &amp; SOPs
           </a>
         </nav>
 

@@ -4,40 +4,48 @@ import { Briefcase, Calendar, MapPin, CheckCircle2 } from "lucide-react";
 
 const experiences = [
   {
-    role: "Test Engineer",
+    role: "Software Support Engineer",
     company: "Kode Creators Pvt. Ltd.",
-    period: "Jun 2024 – Aug 2025",
+    period: "May 2024 – Aug 2025",
     location: "Full-Time",
     highlights: [
-      "Engineered an end-to-end Selenium and Appium test automation framework covering functional, regression, smoke, and sanity suites, cutting regression execution time by 65% and automating 80% of critical user flows across 8 releases.",
-      "Spearheaded defect investigation, reproduction, and root-cause analysis in Agile/Scrum sprints, managing defect lifecycle in Jira and verifying fixes with developers, reducing escaped production defects by 35% and resolution time by 2 days.",
-      "Strengthened release readiness by contributing to sprint planning and validating requirements and change requests with developers and stakeholders across 12 sprints, catching 25+ requirement gaps before development began.",
+      "Detected production-impacting web application issues approximately 20% sooner and reduced investigation time from an average of 60 minutes to 40 minutes by monitoring Splunk dashboards and application performance.",
+      "Triaged incidents by severity and business impact in Jira following ITSM best practices, extracting Splunk log data and writing SQL queries to pinpoint errors and correlate user-reported problems with supporting evidence.",
+      "Improved application stability across multiple releases and reduced repeat alerts and incidents by approximately 30% by analyzing Splunk and APM data for recurring failure patterns and driving root-cause analysis (RCA) with developers.",
+      "Reduced manual support effort by approximately 4 hours per week by writing automated Linux shell scripts for routine maintenance, kept 8 scheduled batch jobs running, and authored technical SOP documentation for 10 commonly encountered problems.",
     ],
-    skills: ["Selenium", "Appium", "Java", "TestNG", "Jira", "Root Cause Analysis", "Agile/Scrum", "Defect Triage"],
+    skills: [
+      "Splunk",
+      "Jira ITSM",
+      "Incident Triage",
+      "SQL Querying",
+      "Root Cause Analysis (RCA)",
+      "Linux Shell Scripting",
+      "Batch Job Scheduling",
+      "SOP Authoring",
+    ],
   },
   {
-    role: "Software QA Engineer Intern",
+    role: "Application Support Engineer",
     company: "Healthcare Informatics Pvt Ltd.",
-    period: "Jan 2024 – Apr 2024",
-    location: "Internship",
+    period: "Oct 2023 – Apr 2024",
+    location: "Contract / Internship",
     highlights: [
-      "Validated 27 user workflows of an enterprise multi-tenant SaaS healthcare platform through functional, usability, and regression testing, supporting 6 iterative releases.",
-      "Designed, documented, and executed 140 test cases that uncovered 91 defects before release, strengthening regression coverage and release confidence across sprints.",
-      "Conducted API validation and exploratory testing to ensure compliance with healthcare tenant segregation requirements.",
+      "Detected and resolved user-impacting incidents approximately 30% faster on an enterprise multi-tenant SaaS healthcare platform by monitoring Splunk dashboards, APM metrics, and Microsoft Azure Monitor alerts.",
+      "Performed structured incident triage and troubleshooting, assessing issue severity and business impact, and tracking each issue to resolution in Azure Boards alongside development teams.",
+      "Sped up root-cause analysis by approximately 15% through extracting Splunk log data and search queries to investigate failure patterns, documenting technical findings, and escalating complex defects with evidence.",
+      "Maintained clear technical documentation and standardized runbooks, improving knowledge sharing and mean-time-to-repair (MTTR) across support and engineering organizations.",
     ],
-    skills: ["Test Case Design", "SaaS QA", "Functional Testing", "Defect Tracking", "API Testing", "Regression"],
-  },
-  {
-    role: "Software Developer Intern",
-    company: "Sannibh Technologies",
-    period: "Jun 2022 – Jul 2022",
-    location: "Internship",
-    highlights: [
-      "Delivered a PHP-based GYM Slot Booking System from requirements gathering through live client deployment in 2 months.",
-      "Implemented database schemas, user authentication, booking logic, and client-driven UI modifications.",
-      "Conducted end-to-end functional verification to ensure booking conflict prevention and data consistency.",
+    skills: [
+      "Application Support",
+      "Splunk",
+      "Azure Monitor",
+      "Azure Boards",
+      "APM Metrics",
+      "SaaS Multi-Tenancy",
+      "Incident Management",
+      "Technical Documentation",
     ],
-    skills: ["PHP", "MySQL", "Full-Stack Development", "Manual Testing", "Client Delivery"],
   },
 ];
 
@@ -48,13 +56,13 @@ export default function Experience() {
         <div className="mb-12">
           <div className="inline-flex items-center gap-2 text-xs font-mono text-emerald-400 mb-2">
             <Briefcase className="w-3.5 h-3.5" />
-            <span>TRACK RECORD & INDUSTRY IMPACT</span>
+            <span>ENTERPRISE APPLICATION &amp; PRODUCTION SUPPORT</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
             Work Experience
           </h2>
           <p className="text-sm text-slate-400 mt-2 max-w-xl">
-            Where I engineered test automation frameworks, triaged production defects, and protected release velocity.
+            Track record monitoring enterprise systems, resolving critical user-impacting incidents, and maintaining high availability across production releases.
           </p>
         </div>
 

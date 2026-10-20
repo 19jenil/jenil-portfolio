@@ -1,74 +1,70 @@
 "use client";
 
-import { Wrench, CheckCircle, ShieldCheck, Cloud, Activity, Code2 } from "lucide-react";
+import { Wrench, ShieldCheck, Cloud, Activity, Code2, AlertTriangle, Database } from "lucide-react";
 
 const skillCategories = [
   {
-    title: "Test Automation & Quality Engineering",
-    icon: ShieldCheck,
+    title: "Monitoring & Observability",
+    icon: Activity,
     color: "text-emerald-400",
     skills: [
-      "Playwright (TypeScript)",
-      "Page Object Model (POM)",
-      "Selenium WebDriver",
-      "Appium (Mobile)",
-      "PyTest",
-      "TestNG",
-      "Allure Reporting",
-      "API Testing (Postman)",
-      "Cross-Browser Execution",
-      "Root Cause Defect Triage",
-      "Performance Testing (JMeter)",
-      "Black-Box & Exploratory Testing",
+      "Splunk (SPL & Log Search)",
+      "Grafana Dashboards",
+      "Application Performance Monitoring (APM)",
+      "Microsoft Azure Monitor",
+      "Alert Handling & Thresholds",
+      "Prometheus Metrics",
+      "OpenTelemetry Tracing",
+      "Dynatrace & Omnibus awareness",
+      "Transaction Latency Auditing",
     ],
   },
   {
-    title: "Cloud Infrastructure & DevOps",
-    icon: Cloud,
-    color: "text-cyan-400",
-    skills: [
-      "AWS (EKS, EC2, IAM)",
-      "Terraform (IaC)",
-      "Kubernetes & Pod Lifecycle",
-      "Docker & Containerization",
-      "GitHub Actions Workflows",
-      "Jenkins CI/CD",
-      "Automated Rollback Systems",
-      "Linux Shell Scripting",
-      "Git & Trunk-Based Delivery",
-    ],
-  },
-  {
-    title: "Observability & System Reliability",
-    icon: Activity,
+    title: "Incident Triage & ITSM Management",
+    icon: AlertTriangle,
     color: "text-amber-400",
     skills: [
-      "Prometheus Metrics",
-      "Grafana Dashboards",
-      "OpenTelemetry Tracing",
-      "p95 / p99 Latency Auditing",
-      "SRE Best Practices",
-      "Incident Reproduction",
-      "Jira & Sprint Defect Lifecycle",
-      "System Health Checks",
+      "ITSM Best Practices",
+      "Jira Service Management",
+      "Incident & Defect Triage",
+      "Severity & Impact Assessment (P1-P4)",
+      "Technical Resolution (TRT/Bridge Calls)",
+      "Root Cause Analysis (RCA)",
+      "SOP & Runbook Authoring",
+      "Change Request (CRQ) Validation",
+      "Escalation Matrix Management",
     ],
   },
   {
-    title: "Languages, Backends & Data",
-    icon: Code2,
+    title: "Operating Systems, Scripting & SQL",
+    icon: Database,
+    color: "text-cyan-400",
+    skills: [
+      "Linux / UNIX Shell Scripting",
+      "SQL Querying & Error Correlation",
+      "PostgreSQL",
+      "MySQL",
+      "Python",
+      "JavaScript",
+      "Java",
+      "C++",
+      "Batch Job Scheduling & Monitoring",
+    ],
+  },
+  {
+    title: "Cloud Infrastructure & CI/CD",
+    icon: Cloud,
     color: "text-violet-400",
     skills: [
-      "TypeScript",
-      "Python",
-      "Java",
-      "JavaScript (ES6+ / async)",
-      "SQL (PostgreSQL, MySQL)",
-      "FastAPI",
-      "Redis Caching",
-      "Django",
-      "MongoDB",
-      "C#",
-      "C++",
+      "Docker Containerization",
+      "Prefect Scheduled DAGs",
+      "Kubernetes",
+      "AWS (EKS, EC2)",
+      "Microsoft Azure",
+      "Jenkins CI/CD",
+      "GitHub Actions",
+      "Terraform (IaC)",
+      "Automated Rollback Systems",
     ],
   },
 ];
@@ -79,13 +75,13 @@ export default function Skills() {
       <div className="mb-12">
         <div className="inline-flex items-center gap-2 text-xs font-mono text-emerald-400 mb-2">
           <Wrench className="w-3.5 h-3.5" />
-          <span>TECHNICAL ARSENAL</span>
+          <span>PRODUCTION ARSENAL</span>
         </div>
         <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
-          Skills & Technologies
+          Technical Skills &amp; Support Tooling
         </h2>
         <p className="text-sm text-slate-400 mt-2 max-w-xl">
-          Core technical competencies grouped by engineering domain. No artificial percentage bars—only tools and frameworks I use in production.
+          Core toolset for 24x7 production monitoring, log extraction, incident management, and batch automation.
         </p>
       </div>
 

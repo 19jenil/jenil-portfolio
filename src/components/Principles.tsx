@@ -1,6 +1,6 @@
 "use client";
 
-import { Compass, GraduationCap, MapPin, Sparkles, BookOpen, Terminal } from "lucide-react";
+import { Compass, GraduationCap, MapPin, Sparkles, BookOpen, Terminal, ShieldAlert } from "lucide-react";
 
 export default function Principles() {
   return (
@@ -9,13 +9,13 @@ export default function Principles() {
         <div className="mb-12">
           <div className="inline-flex items-center gap-2 text-xs font-mono text-emerald-400 mb-2">
             <Compass className="w-3.5 h-3.5" />
-            <span>ENGINEERING POV & PHILOSOPHY</span>
+            <span>PRODUCTION PHILOSOPHY &amp; ITSM PRACTICES</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
-            How I Think & Build
+            How I Support Enterprise Systems
           </h2>
           <p className="text-sm text-slate-400 mt-2 max-w-xl">
-            Technical principles I stick to when designing test frameworks and operating cloud systems.
+            Operating principles I adhere to when monitoring live transactions, mitigating incidents, and maintaining 24/7 service availability.
           </p>
         </div>
 
@@ -26,10 +26,10 @@ export default function Principles() {
               // PRINCIPLE 01
             </div>
             <h3 className="text-lg font-bold text-white">
-              Flaky tests are architectural debt, not bad luck.
+              Proactive monitoring beats reactive fire-fighting.
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              When a test fails intermittently, developers stop trusting CI. I eliminate flakiness by enforcing deterministic test fixtures, isolating database state, and replacing arbitrary sleep timeouts with explicit event-driven wait assertions.
+              The highest quality incident is the one caught on a Splunk or APM dashboard before a customer files a ticket. Proactive alerting on latency anomalies and error rate spikes prevents major service disruptions.
             </p>
           </div>
 
@@ -38,22 +38,22 @@ export default function Principles() {
               // PRINCIPLE 02
             </div>
             <h3 className="text-lg font-bold text-white">
-              Quality engineering doesn&apos;t end at deployment.
+              Every major incident must yield a permanent SOP.
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Testing pre-release and monitoring post-release are two sides of the same coin. Reliable systems combine automated test coverage with OpenTelemetry distributed tracing, Prometheus alerts, and fast automated rollbacks.
+              Incident resolution doesn&apos;t end when the service restores. Running disciplined Root Cause Analysis (RCA) with development teams, updating Standard Operating Procedures (SOPs), and verifying CRQs reduces repeat alerts across releases.
             </p>
           </div>
 
           <div className="p-6 rounded-xl bg-slate-900/60 border border-slate-800 space-y-3">
-            <div className="text-violet-400 font-mono text-xs font-semibold">
+            <div className="text-amber-400 font-mono text-xs font-semibold">
               // PRINCIPLE 03
             </div>
             <h3 className="text-lg font-bold text-white">
-              Automate the repetitive, elevate human exploration.
+              Automate manual toil with scripts &amp; batch gates.
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Automated suites exist to handle the tedious regression passes across browsers. This frees up engineering time to investigate high-impact exploratory scenarios, stress test architecture limits, and scrutinize requirement edge cases.
+              Routine diagnostic checks shouldn&apos;t consume valuable support hours. I automate repetitive tasks using Linux shell scripts and scheduled batch workflows, protecting engineering capacity for critical incident bridges.
             </p>
           </div>
         </div>
@@ -69,16 +69,16 @@ export default function Principles() {
               MSc in Computing Science @ Griffith College Dublin
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
-              Holding an MSc in Computing Science from Griffith College Dublin, with strong hands-on experience across software engineering, cloud infrastructure, and AI systems. Actively seeking graduate, junior, and full-time Software Engineer (SDE), AI Engineer, Cloud/DevOps, or Quality Engineering roles in Ireland &amp; Remote.
+              Holding an MSc in Computing Science in Dublin, with strong hands-on expertise across application support, cloud observability, and payment systems reliability. Available for 24/7 rotational shifts, TRT incident bridges, and hybrid on-site roles in Dublin.
             </p>
           </div>
 
           <div className="shrink-0 p-4 rounded-xl bg-black/40 border border-slate-800 text-xs font-mono text-slate-400 space-y-1">
-            <div className="text-slate-300 font-bold">Academic Focus:</div>
-            <div>• Cloud-Native Systems</div>
-            <div>• Distributed Networks</div>
-            <div>• System Observability & SRE</div>
-            <div className="text-emerald-400 pt-1 font-semibold">Sep 2025 – Sep 2026</div>
+            <div className="text-slate-300 font-bold">Eligibility &amp; Availability:</div>
+            <div className="text-emerald-400">• Full Clean Driving Licence</div>
+            <div>• Open to 24/7 Shift Schedules</div>
+            <div>• Dublin, Ireland On-Site / Hybrid</div>
+            <div className="text-slate-300 pt-1">Sep 2025 – Sep 2026</div>
           </div>
         </div>
       </div>

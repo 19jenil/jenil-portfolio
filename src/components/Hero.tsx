@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Terminal, ArrowDown, FileText, CheckCircle2, ShieldCheck, Zap, Activity } from "lucide-react";
+import { Terminal, ArrowDown, FileText, CheckCircle2, ShieldCheck, Zap, Activity, Clock, Server } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/Icons";
 import Link from "next/link";
 
@@ -18,7 +18,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/70 text-slate-300 text-xs font-mono shadow-sm mb-6"
+          className="inline-flex flex-wrap items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/70 text-slate-300 text-xs font-mono shadow-sm mb-6"
         >
           <span className="flex h-2 w-2 relative">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
@@ -26,9 +26,9 @@ export default function Hero() {
           </span>
           <span>Dublin, Ireland 🇮🇪</span>
           <span className="text-slate-600">•</span>
-          <span>Full Driving Licence</span>
+          <span>Full Clean Driving Licence</span>
           <span className="text-slate-600">•</span>
-          <span className="text-emerald-400 font-medium">Available for Software Engineer (SDE, AI, Cloud) Roles</span>
+          <span className="text-emerald-400 font-medium">Available for 24/7 Application Support &amp; Production Roles</span>
         </motion.div>
 
         {/* Main Headline */}
@@ -39,18 +39,18 @@ export default function Hero() {
           className="max-w-4xl"
         >
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.15]">
-            I build test automation frameworks that{" "}
+            Proactive incident triage,{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">
-              don&apos;t flake
+              Splunk observability
             </span>{" "}
-            and cloud systems that{" "}
+            &amp; 24/7{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-sky-300">
-              stay resilient
+              production uptime
             </span>.
           </h1>
 
           <p className="mt-6 text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
-            Hi, I&apos;m <strong className="text-white font-semibold">Jenil Patel</strong>—a versatile Software Engineer with strong hands-on experience in full-stack backend development, cloud infrastructure, AI models, and automated testing, holding an MSc in Computing Science from Griffith College Dublin.
+            Hi, I&apos;m <strong className="text-white font-semibold">Jenil Patel</strong>—an Application Support &amp; Production Reliability Engineer with hands-on experience in enterprise incident management, Splunk log forensics, APM transaction tracing, SQL defect correlation, and automated batch scheduling. Holding an MSc in Computing Science from Griffith College Dublin.
           </p>
         </motion.div>
 
@@ -62,10 +62,10 @@ export default function Hero() {
           className="mt-8 flex flex-wrap items-center gap-3 sm:gap-4 font-mono text-xs"
         >
           <a
-            href="#projects"
+            href="#console"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold transition-all shadow-lg shadow-emerald-500/20"
           >
-            <span>Explore Projects</span>
+            <span>Live Incident Console</span>
             <ArrowDown className="w-4 h-4" />
           </a>
 
@@ -74,7 +74,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700/80 transition-all"
           >
             <FileText className="w-4 h-4 text-emerald-400" />
-            <span>Master Resume</span>
+            <span>Targeted Resume</span>
           </Link>
 
           <a
@@ -107,38 +107,38 @@ export default function Hero() {
         >
           <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-sm">
             <div className="flex items-center justify-between text-slate-400 mb-1">
-              <span className="text-[11px] font-mono uppercase tracking-wider">Test Automation</span>
+              <span className="text-[11px] font-mono uppercase tracking-wider">Incident Resolution</span>
               <Zap className="w-4 h-4 text-amber-400" />
             </div>
-            <div className="text-2xl sm:text-3xl font-bold font-mono text-white">65%</div>
-            <p className="text-xs text-slate-400 mt-0.5">Regression time reduced across 8 releases</p>
+            <div className="text-2xl sm:text-3xl font-bold font-mono text-white">30% Faster</div>
+            <p className="text-xs text-slate-400 mt-0.5">MTTR reduction via Splunk &amp; APM triage</p>
           </div>
 
           <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-sm">
             <div className="flex items-center justify-between text-slate-400 mb-1">
-              <span className="text-[11px] font-mono uppercase tracking-wider">Test Coverage</span>
+              <span className="text-[11px] font-mono uppercase tracking-wider">Early Detection</span>
               <ShieldCheck className="w-4 h-4 text-emerald-400" />
             </div>
-            <div className="text-2xl sm:text-3xl font-bold font-mono text-white">140+</div>
-            <p className="text-xs text-slate-400 mt-0.5">Automated test scenarios in Playwright & Selenium</p>
+            <div className="text-2xl sm:text-3xl font-bold font-mono text-white">20% Sooner</div>
+            <p className="text-xs text-slate-400 mt-0.5">Issues detected before user escalations</p>
           </div>
 
           <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-sm">
             <div className="flex items-center justify-between text-slate-400 mb-1">
-              <span className="text-[11px] font-mono uppercase tracking-wider">System Latency</span>
-              <Activity className="w-4 h-4 text-cyan-400" />
+              <span className="text-[11px] font-mono uppercase tracking-wider">Batch Operations</span>
+              <Server className="w-4 h-4 text-cyan-400" />
             </div>
-            <div className="text-2xl sm:text-3xl font-bold font-mono text-white">&lt;40ms</div>
-            <p className="text-xs text-slate-400 mt-0.5">p95 auth latency sustained on AWS EKS</p>
+            <div className="text-2xl sm:text-3xl font-bold font-mono text-white">8 Jobs</div>
+            <p className="text-xs text-slate-400 mt-0.5">Scheduled batch jobs monitored &amp; kept green</p>
           </div>
 
           <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-sm">
             <div className="flex items-center justify-between text-slate-400 mb-1">
-              <span className="text-[11px] font-mono uppercase tracking-wider">Model Benchmark</span>
-              <CheckCircle2 className="w-4 h-4 text-violet-400" />
+              <span className="text-[11px] font-mono uppercase tracking-wider">Investigation MTTR</span>
+              <Clock className="w-4 h-4 text-violet-400" />
             </div>
-            <div className="text-2xl sm:text-3xl font-bold font-mono text-white">98.17%</div>
-            <p className="text-xs text-slate-400 mt-0.5">ResNet50 classification on 118K images</p>
+            <div className="text-2xl sm:text-3xl font-bold font-mono text-white">40 Mins</div>
+            <p className="text-xs text-slate-400 mt-0.5">Reduced from 60 mins via SQL &amp; log queries</p>
           </div>
         </motion.div>
       </div>

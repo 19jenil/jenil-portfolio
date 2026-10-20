@@ -1,96 +1,96 @@
 "use client";
 
-import { ExternalLink, CheckCircle2, Shield, Activity, Layers, ArrowUpRight } from "lucide-react";
+import { motion } from "framer-motion";
+import { ExternalLink, CheckCircle2, Shield, Activity, Layers, ArrowUpRight, Server, FileText } from "lucide-react";
 import { GithubIcon } from "@/components/Icons";
 
 const projects = [
   {
-    id: "payment-platform",
-    title: "Payment Authorization & Reliability Platform",
-    tagline: "High-throughput authorization API with automated rollbacks and p95 latency under 40ms on AWS EKS.",
-    category: "Cloud Reliability & Backend",
-    categoryColor: "text-cyan-400 bg-cyan-500/10 border-cyan-500/20",
+    id: "payment-reconciliation",
+    title: "Multi-Provider Payment Reconciliation & Fraud-Detection Pipeline",
+    tagline: "Automated transaction reconciliation engine across 3 payment providers with scheduled Prefect DAGs and anomaly detection.",
+    category: "Payment Systems & Batch Operations",
+    categoryColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
     metrics: [
-      { label: "p95 Latency", value: "<40ms" },
-      { label: "Throughput", value: "20 req/s" },
-      { label: "MTTR Rollback", value: "<7 mins" },
-      { label: "Concurrency", value: "28 threads" },
+      { label: "Providers Unified", value: "3 Gateways" },
+      { label: "Test Coverage", value: "93% Pytest" },
+      { label: "Data Quality Gate", value: "Automated DAG" },
+      { label: "Batch Scheduling", value: "Prefect / Docker" },
     ],
     summary:
-      "Architected a real-time payment authorization engine enforcing amount, velocity, and card blocklist rules. Built with FastAPI and audited in PostgreSQL, using Redis for high-speed velocity caching. Provisioned on AWS EKS with Terraform and guarded by Jenkins CI/CD with Prometheus, Grafana, and OpenTelemetry instrumentation.",
+      "Engineered an automated data pipeline normalizing high-volume transaction feeds from three distinct payment providers with heterogeneous schemas into an audited single source of truth. Built custom fraud detection rules evaluating per-card velocity thresholds and amount anomalies against rolling averages, with an automated data-quality gate stopping downstream ingestion if reconciliation variance exceeds tolerances.",
     keyArchitectures: [
-      "FastAPI microservice integrated with Redis for sub-millisecond per-card velocity checks",
-      "Terraform-managed AWS EKS infrastructure with automated Jenkins rollback pipelines",
-      "Distributed tracing with OpenTelemetry and continuous alerting via Prometheus/Grafana",
-      "PyTest unit and integration test suite with 65% coverage validating 28 concurrent requests",
+      "Normalizes heterogeneous transaction streams into a unified financial ledger schema",
+      "Velocity & anomaly detection algorithms catching fraudulent payment patterns in near real-time",
+      "Scheduled Prefect DAG with circuit-breaking quality gates preventing corrupted data propagation",
+      "Fully containerized with Docker and automated via GitHub Actions with 93% Pytest suite coverage",
     ],
     stack: [
-      "FastAPI",
       "Python",
-      "PostgreSQL",
-      "Redis",
-      "AWS EKS",
-      "Terraform",
+      "Pytest",
       "Docker",
-      "Kubernetes",
-      "Jenkins",
-      "Prometheus",
-      "Grafana",
-      "OpenTelemetry",
-      "PyTest",
+      "Prefect",
+      "GitHub Actions",
+      "Payment Gateways",
+      "Data Reconciliation",
+      "Linux",
     ],
     github: "https://github.com/19jenil",
   },
   {
-    id: "playwright-framework",
-    title: "E-Commerce Test Automation Framework",
-    tagline: "Enterprise Playwright & TypeScript test framework with Page Object Model and parallel cross-browser execution.",
-    category: "SDET & Test Engineering",
-    categoryColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20",
+    id: "payment-authorization",
+    title: "Payment Authorization & Reliability Platform",
+    tagline: "High-throughput authorization microservice with sub-40ms p95 latency and automated 7-minute rollback recovery on AWS EKS.",
+    category: "High-Availability Infrastructure",
+    categoryColor: "text-cyan-400 bg-cyan-500/10 border-cyan-500/20",
     metrics: [
-      { label: "Code Duplication", value: "-60%" },
-      { label: "Execution Speed", value: "+90%" },
-      { label: "Browser Coverage", value: "Chromium, Firefox, WebKit" },
-      { label: "CI Pipeline", value: "GitHub Actions" },
+      { label: "p95 Latency", value: "<40ms" },
+      { label: "Throughput", value: "20 req/s" },
+      { label: "Recovery MTTR", value: "<7 mins" },
+      { label: "Concurrency", value: "28 threads" },
     ],
     summary:
-      "Engineered an industrial-grade end-to-end testing framework in TypeScript for modern e-commerce platforms. Covers user authentication, catalog search, faceted filtering, cart persistence, and checkout transactions. Uses custom fixtures, strict assertions, and automated artifact capture to eliminate flaky tests.",
+      "Engineered a real-time payment authorization engine enforcing amount limits, velocity rules, and card blocklists. Integrated Redis for sub-millisecond velocity lookups and PostgreSQL for audited transaction trails. Deployed to AWS EKS using Terraform and monitored with Grafana and OpenTelemetry, with automated Jenkins rollbacks restoring service during deployment degradation.",
     keyArchitectures: [
-      "Page Object Model (POM) architecture reducing framework maintenance by 60%",
-      "Cross-browser parallel execution across 4 workers accelerating test completion by 90%",
-      "Automated trace viewers, failure video recording, and DOM snapshot debugging",
-      "GitHub Actions CI integration triggering smoke and regression suites on every pull request with Allure reporting",
+      "FastAPI service enforcing strict card authorization policies with Redis in-memory cache",
+      "Audited transactional ledger in PostgreSQL ensuring financial consistency and compliance",
+      "Grafana dashboards and OpenTelemetry tracing monitoring latency and error spikes",
+      "Jenkins CI/CD with automated rollback recovering failed deployments in under 7 minutes",
     ],
     stack: [
-      "Playwright",
-      "TypeScript",
-      "Node.js",
-      "GitHub Actions",
-      "REST APIs",
-      "Allure Reports",
-      "Page Object Model",
-      "CI/CD",
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "Kubernetes (EKS)",
+      "AWS",
+      "Terraform",
+      "Jenkins",
+      "Grafana",
+      "OpenTelemetry",
+      "Pytest",
     ],
     github: "https://github.com/19jenil",
   },
   {
     id: "imageguard-ai",
     title: "ImageGuard: AI-Generated Image Classification",
-    tagline: "Deep learning computer vision system detecting synthetic vs. authentic media with 98.17% accuracy.",
+    tagline: "Deep learning computer vision system detecting synthetic media vs. authentic imagery with 98.17% accuracy.",
     category: "Machine Learning & Python",
     categoryColor: "text-purple-400 bg-purple-500/10 border-purple-500/20",
     metrics: [
       { label: "Model Accuracy", value: "98.17%" },
       { label: "ROC-AUC Score", value: "0.9976" },
       { label: "Dataset Size", value: "118K Images" },
-      { label: "Top Model", value: "ResNet50" },
+      { label: "Architecture", value: "ResNet50" },
     ],
     summary:
-      "Benchmarked four deep convolutional architectures (ResNet50, MobileNetV2, EfficientNetB0, and custom CNN) utilizing two-stage transfer learning on a deduplicated 118,000-image CIFAKE dataset. Fine-tuned ResNet50 achieved state-of-the-art detection accuracy and was deployed in a full-stack Django application for real-time inference.",
+      "Benchmarked four deep convolutional architectures (ResNet50, MobileNetV2, EfficientNetB0, custom CNN) using transfer learning on 118,000 CIFAKE images. Fine-tuned ResNet50 achieved 98.17% accuracy and was integrated into a Django web platform with real-time inference preprocessing and SQLite audit logs.",
     keyArchitectures: [
       "Two-stage transfer learning with customized Keras preprocessing pipeline and data augmentation",
-      "Benchmarking matrix across 4 architectures reaching 0.9976 ROC-AUC on unseen data",
-      "Full-stack Django web app storing classification history and confidence intervals in SQLite",
+      "Benchmarked 4 architectures reaching 0.9976 ROC-AUC on unseen test datasets",
+      "Deployed into a full-stack Django app with real-time prediction history and confidence scoring",
     ],
     stack: [
       "Python",
@@ -113,13 +113,13 @@ export default function Projects() {
         <div>
           <div className="inline-flex items-center gap-2 text-xs font-mono text-emerald-400 mb-2">
             <Layers className="w-3.5 h-3.5" />
-            <span>PROOF OF TECHNICAL CRAFT</span>
+            <span>PAYMENT SYSTEMS &amp; RELIABILITY ENGINEERING</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
-            Flagship Engineering Projects
+            Flagship Engineering &amp; Data Projects
           </h2>
           <p className="text-sm text-slate-400 mt-2 max-w-xl">
-            Detailed case studies with real architectures, measurable outcomes, and production-tested code.
+            Real production architectures highlighting financial transaction reconciliation, automated recovery, and high-throughput reliability.
           </p>
         </div>
 
@@ -135,7 +135,7 @@ export default function Projects() {
       </div>
 
       <div className="space-y-12">
-        {projects.map((project, index) => (
+        {projects.map((project) => (
           <div
             key={project.id}
             className="rounded-2xl bg-gradient-to-b from-slate-900/90 to-slate-900/50 border border-slate-800 p-6 sm:p-8 hover:border-slate-700 transition-all shadow-xl group"

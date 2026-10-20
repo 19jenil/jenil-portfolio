@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Mail, Check, Copy, FileText, ArrowUp, Terminal } from "lucide-react";
+import { Mail, Check, Copy, FileText, ArrowUp, Terminal, Phone, MapPin } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/Icons";
 
 export default function Footer() {
@@ -27,13 +27,13 @@ export default function Footer() {
           <div>
             <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs mb-3">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              <span>Available for Hire in Dublin & Remote</span>
+              <span>Available for 24/7 Production &amp; Application Support</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
-              Ready to build high-impact software together?
+              Ready to protect 24/7 production uptime and drive down MTTR?
             </h2>
             <p className="text-sm text-slate-400 mt-2 max-w-xl">
-              I am actively interviewing for Software Engineer (SDE), AI Engineering, Cloud/DevOps, and SDET roles. Let&apos;s discuss how I can contribute to your team.
+              I am actively interviewing for Application Support Engineer, Production Support Engineer, and Reliability roles in Dublin, Ireland. Let&apos;s discuss how I can strengthen your operational support.
             </p>
           </div>
 
@@ -67,11 +67,13 @@ export default function Footer() {
 
         {/* Footer Links & Info */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pt-8 border-t border-slate-900 text-xs font-mono text-slate-500">
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3">
             <div className="w-6 h-6 rounded bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
               <Terminal className="w-3.5 h-3.5" />
             </div>
             <span>Jenil Patel • Dublin, Ireland 🇮🇪</span>
+            <span>•</span>
+            <span className="text-slate-400">+353 89 247 6274</span>
           </div>
 
           <div className="flex items-center gap-5">
